@@ -11,20 +11,17 @@ class InitialView extends GetView<InitialController> {
         children: <Widget>[
           SplashScreen(
             seconds: 5,
-            gradientBackground: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Colors.blue,
-                Colors.red,
-              ],
-            ),
+            backgroundColor: Get.theme.primaryColor,
             navigateAfterSeconds: controller.verifyAuth(),
             loaderColor: Colors.transparent,
           ),
           Container(
-            margin: EdgeInsets.all(100),
-            child: Text('Ottis Pet'),
+            child: Center(
+              child: Image.asset(
+                'assets/images/ottis_pet_logo.png',
+                height: 200,
+              ),
+            ),
           ),
         ],
       ),
