@@ -5,7 +5,7 @@ final ThemeData appThemeData = ThemeData(
   primaryColor: kCornflowerBlue,
   buttonColor: kCornflowerBlue,
   brightness: Brightness.light,
-  accentColor: Colors.red,
+  accentColor: kCreamCan,
   appBarTheme: AppBarTheme(
     color: Colors.amber[600],
   ),

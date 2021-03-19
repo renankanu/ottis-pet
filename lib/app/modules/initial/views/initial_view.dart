@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ottis_pet/app/global/images.dart';
 import 'package:ottis_pet/app/modules/initial/controllers/initial_controller.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -18,8 +19,8 @@ class InitialView extends GetView<InitialController> {
           Container(
             child: Center(
               child: Image.asset(
-                'assets/images/ottis_pet_logo.png',
-                height: 200,
+                kLogoSplash,
+                height: 300,
               ),
             ),
           ),
