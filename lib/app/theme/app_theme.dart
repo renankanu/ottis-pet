@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ottis_pet/app/global/colors.dart';
 
 final ThemeData appThemeData = ThemeData(
-  primaryColor: Colors.red,
-  buttonColor: Colors.deepOrange,
+  primaryColor: kCornflowerBlue,
+  buttonColor: kCornflowerBlue,
   brightness: Brightness.light,
-  accentColor: Colors.black45,
+  accentColor: Colors.red,
   appBarTheme: AppBarTheme(
     color: Colors.amber[600],
   ),

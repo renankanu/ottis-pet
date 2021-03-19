@@ -26,6 +26,7 @@ class WelcomeView extends GetView<WelcomeController> {
               press: () {
                 Get.offAndToNamed('/login');
               },
+              color: Get.theme.accentColor,
             ),
             RoundedButton(
               text: "REGISTRAR",
