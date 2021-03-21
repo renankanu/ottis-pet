@@ -23,6 +23,7 @@ class WelcomeView extends GetView<WelcomeController> {
           pages: [
             PageViewModel(
               titleWidget: ContainerImage(
+                background: kDodgerBlue,
                 child: SvgPicture.asset(
                   kWelcomeScreenOne,
                   height: 300,
@@ -62,6 +63,7 @@ class WelcomeView extends GetView<WelcomeController> {
             ),
             PageViewModel(
               titleWidget: ContainerImage(
+                background: kDodgerBlue,
                 child: SvgPicture.asset(
                   kWelcomeScreenTwo,
                   height: 300,
@@ -100,6 +102,7 @@ class WelcomeView extends GetView<WelcomeController> {
             ),
             PageViewModel(
               titleWidget: ContainerImage(
+                background: kDodgerBlue,
                 child: SvgPicture.asset(
                   kWelcomeScreenTrhee,
                   height: 300,
