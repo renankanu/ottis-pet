@@ -134,7 +134,9 @@ class WelcomeView extends GetView<WelcomeController> {
               decoration: pageDecoration,
             ),
           ],
-          onDone: () {},
+          onDone: () {
+            controller.navigateLogin();
+          },
           showSkipButton: true,
           skipFlex: 0,
           nextFlex: 0,
