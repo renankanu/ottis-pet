@@ -6,5 +6,11 @@
       "sign_in_fb": "Sign-in with Facebook",
       "sign_in_google": "Sign-in with Google",
       "sign_in_apple": "Sign-in with Apple"
+    },
+    "welcome":{
+      "find_your": "Find Your",
+      "dream": "Dream",
+      "here": "Pet Here",
+      "just_us": "Join us and discover the best pet in your location"
     }
   }
