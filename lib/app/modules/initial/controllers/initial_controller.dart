@@ -5,6 +5,6 @@ class InitialController extends GetxController {
   var auth;
 
   String verifyAuth() {
-    return Routes.LOGIN;
+    return Routes.WELCOME;
   }
 }
