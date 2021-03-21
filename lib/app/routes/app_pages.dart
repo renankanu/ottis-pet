@@ -1,9 +1,12 @@
+import 'package:get/get.dart';
+
 import 'package:ottis_pet/app/modules/initial/bindings/initial_binding.dart';
 import 'package:ottis_pet/app/modules/initial/views/initial_view.dart';
+import 'package:ottis_pet/app/modules/login/bindings/login_binding.dart';
+import 'package:ottis_pet/app/modules/login/views/login_view.dart';
 import 'package:ottis_pet/app/modules/welcome/binding/welcome_binding.dart';
 import 'package:ottis_pet/app/modules/welcome/view/welcome_view.dart';
 import 'package:ottis_pet/app/routes/app_routes.dart';
-import 'package:get/get.dart';
 
 class AppPages {
   static const INITIAL = Routes.INITIAL;
@@ -18,6 +21,11 @@ class AppPages {
       name: Routes.WELCOME,
       page: () => WelcomeView(),
       binding: WelcomeBinding(),
-    )
+    ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => LoginView(),
+      binding: LoginBinding(),
+    ),
   ];
 }
