@@ -14,14 +14,13 @@ void main() async {
     theme: appThemeData,
     initialRoute: Routes.INITIAL,
     getPages: AppPages.routes,
+    locale: Get.deviceLocale,
     translationsKeys: AppTranslation.translations,
-    builder: (context, child) => MediaQuery(
-      data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
-      child: child,
-    ),
+    defaultTransition: Transition.fade,
     localizationsDelegates: [GlobalMaterialLocalizations.delegate],
     supportedLocales: [
       const Locale('pt', 'BR'),
+      const Locale('en', 'US'),
     ],
   ));
 }

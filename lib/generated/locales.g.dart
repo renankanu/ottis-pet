@@ -5,7 +5,7 @@
 class AppTranslation {
   static Map<String, Map<String, String>> translations = {
     'pt_BR': Locales.pt_BR,
-    'en_EN': Locales.en_EN,
+    'en_US': Locales.en_US,
   };
 }
 
@@ -27,7 +27,7 @@ class Locales {
     'buttons_sign_in_google': 'Entar com o Google',
     'buttons_sign_in_apple': 'Entar com a  Apple',
   };
-  static const en_EN = {
+  static const en_US = {
     'buttons_login': 'Login',
     'buttons_sign_in': 'Sign-in',
     'buttons_logout': 'Logout',
