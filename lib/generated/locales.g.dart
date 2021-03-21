@@ -20,6 +20,13 @@ class LocaleKeys {
   static const welcome_dream = 'welcome_dream';
   static const welcome_here = 'welcome_here';
   static const welcome_just_us = 'welcome_just_us';
+  static const welcome_skip = 'welcome_skip';
+  static const welcome_done = 'welcome_done';
+  static const welcome_because_their = 'welcome_because_their';
+  static const welcome_matter = 'welcome_matter';
+  static const welcome_a_percentage = 'welcome_a_percentage';
+  static const welcome_avoid = 'welcome_avoid';
+  static const welcome_report = 'welcome_report';
 }
 
 class Locales {
@@ -35,6 +42,14 @@ class Locales {
     'welcome_here': 'Aqui',
     'welcome_just_us':
         'Junte-se a nós e descubra o melhor animal de estimação em sua localização',
+    'welcome_skip': 'Pular',
+    'welcome_done': 'Done',
+    'welcome_because_their': 'Porque Suas Vidas São ',
+    'welcome_matter': 'Importantes',
+    'welcome_a_percentage':
+        'Uma porcentagem dos cães de abrigo são considerados sem ajuda, e estamos aqui para atendê-los.',
+    'welcome_avoid': 'Evite maltratar animais, ',
+    'welcome_report': 'Report It!',
   };
   static const en_US = {
     'buttons_login': 'Login',
@@ -47,5 +62,13 @@ class Locales {
     'welcome_dream': 'Dream',
     'welcome_here': 'Pet Here',
     'welcome_just_us': 'Join us and discover the best pet in your location',
+    'welcome_skip': 'Skip',
+    'welcome_done': 'Done',
+    'welcome_because_their': 'Because Their Lives ',
+    'welcome_matter': 'Matter',
+    'welcome_a_percentage':
+        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
+    'welcome_avoid': 'Avoid Mistreating Animals, ',
+    'welcome_report': 'Report It',
   };
 }

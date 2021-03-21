@@ -74,7 +74,7 @@ class WelcomeView extends GetView<WelcomeController> {
                   RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: '${LocaleKeys.welcome_find_your.tr} ',
+                      text: '${LocaleKeys.welcome_because_their.tr} ',
                       style: kBaseStyle.copyWith(
                         fontSize: 36,
                         color: kBlackRock,
@@ -82,19 +82,50 @@ class WelcomeView extends GetView<WelcomeController> {
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          text: LocaleKeys.welcome_dream.tr,
+                          text: LocaleKeys.welcome_matter.tr,
                           style: TextStyle(color: kCornflowerBlue),
                         ),
-                        TextSpan(text: ' ${LocaleKeys.welcome_here.tr}'),
                       ],
                     ),
                   ),
                   SizedBox(height: 20),
                   Text(
-                    LocaleKeys.welcome_just_us.tr,
+                    LocaleKeys.welcome_a_percentage.tr,
                     textAlign: TextAlign.center,
                     style: kBaseStyle.copyWith(fontSize: 18, color: kStormGray),
                   )
+                ],
+              ),
+              decoration: pageDecoration,
+            ),
+            PageViewModel(
+              titleWidget: ContainerImage(
+                child: SvgPicture.asset(
+                  kWelcomeScreenTrhee,
+                  height: 300,
+                  placeholderBuilder: (BuildContext context) =>
+                      ReplaceWelcomeScreenImage(),
+                ),
+              ),
+              bodyWidget: Column(
+                children: [
+                  RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      text: '${LocaleKeys.welcome_avoid.tr} ',
+                      style: kBaseStyle.copyWith(
+                        fontSize: 36,
+                        color: kBlackRock,
+                        fontWeight: FontWeight.w900,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: LocaleKeys.welcome_report.tr,
+                          style: TextStyle(color: kCornflowerBlue),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
               decoration: pageDecoration,
@@ -105,7 +136,7 @@ class WelcomeView extends GetView<WelcomeController> {
           skipFlex: 0,
           nextFlex: 0,
           skip: Text(
-            'Pular',
+            LocaleKeys.welcome_skip.tr,
             style: kBaseStyle.copyWith(
                 fontWeight: FontWeight.w700, color: kSaffron),
           ),
@@ -114,17 +145,19 @@ class WelcomeView extends GetView<WelcomeController> {
             height: 32,
             color: kSaffron,
           ),
-          done: Text('Pronto',
+          done: Text(LocaleKeys.welcome_done.tr,
               style: kBaseStyle.copyWith(
                   fontWeight: FontWeight.w700, color: kSaffron)),
           dotsDecorator: DotsDecorator(
-              size: const Size.square(10.0),
-              activeSize: const Size(20.0, 10.0),
-              activeColor: Get.theme.accentColor,
-              color: Colors.black26,
-              spacing: const EdgeInsets.symmetric(horizontal: 3.0),
-              activeShape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25.0))),
+            size: const Size.square(10.0),
+            activeSize: const Size(20.0, 10.0),
+            activeColor: Get.theme.accentColor,
+            color: Colors.black26,
+            spacing: const EdgeInsets.symmetric(horizontal: 3.0),
+            activeShape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(25.0),
+            ),
+          ),
         ),
       ),
     );
