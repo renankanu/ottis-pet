@@ -43,13 +43,13 @@ class Locales {
     'welcome_just_us':
         'Junte-se a nós e descubra o melhor animal de estimação em sua localização',
     'welcome_skip': 'Pular',
-    'welcome_done': 'Done',
+    'welcome_done': 'Feito',
     'welcome_because_their': 'Porque Suas Vidas São ',
     'welcome_matter': 'Importantes',
     'welcome_a_percentage':
         'Uma porcentagem dos cães de abrigo são considerados sem ajuda, e estamos aqui para atendê-los.',
     'welcome_avoid': 'Evite maltratar animais, ',
-    'welcome_report': 'Report It!',
+    'welcome_report': 'Denuncie!',
   };
   static const en_US = {
     'buttons_login': 'Login',
