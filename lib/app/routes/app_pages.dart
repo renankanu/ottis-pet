@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:ottis_pet/app/modules/home/bindings/home_binding.dart';
+import 'package:ottis_pet/app/modules/home/views/home_view.dart';
 import 'package:ottis_pet/app/modules/initial/bindings/initial_binding.dart';
 import 'package:ottis_pet/app/modules/initial/views/initial_view.dart';
 import 'package:ottis_pet/app/modules/login/bindings/login_binding.dart';
@@ -26,6 +28,11 @@ class AppPages {
       name: Routes.LOGIN,
       page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () => HomeView(),
+      binding: HomeBinding(),
     ),
   ];
 }

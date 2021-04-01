@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ottis_pet/app/global/images.dart';
 import 'package:ottis_pet/app/global/text_style.dart';
+import 'package:ottis_pet/app/global/widgets/custom_input_field.dart';
 import 'package:ottis_pet/app/global/widgets/rounded_button.dart';
+import 'package:ottis_pet/app/routes/app_routes.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -11,14 +13,12 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(kBackgroundLogin), fit: BoxFit.fitHeight)),
-        child: SafeArea(
-          child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints:
+              BoxConstraints(minHeight: MediaQuery.of(context).size.height),
+          child: Container(
+            width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
@@ -30,15 +30,12 @@ class LoginView extends GetView<LoginController> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: Get.height * 0.05),
-                Image.network(
-                  'https://picsum.photos/200',
-                  height: Get.height * 0.45,
-                ),
+                CustomInputField(),
                 SizedBox(height: Get.height * 0.05),
                 RoundedButton(
                   text: "LOGIN",
                   press: () {
-                    Get.offAndToNamed('/login');
+                    Get.offAndToNamed(Routes.HOME);
                   },
                   color: Get.theme.accentColor,
                 ),

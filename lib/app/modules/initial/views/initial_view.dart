@@ -20,7 +20,7 @@ class InitialView extends GetView<InitialController> {
             child: Center(
               child: Image.asset(
                 kLogoSplash,
-                height: 300,
+                height: 200,
               ),
             ),
           ),
