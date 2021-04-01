@@ -13,10 +13,8 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: ConstrainedBox(
-          constraints:
-              BoxConstraints(minHeight: MediaQuery.of(context).size.height),
+      body: Center(
+        child: SingleChildScrollView(
           child: Container(
             width: double.infinity,
             child: Column(
@@ -30,23 +28,35 @@ class LoginView extends GetView<LoginController> {
                       fontWeight: FontWeight.w600),
                 ),
                 SizedBox(height: Get.height * 0.05),
-                CustomInputField(),
-                SizedBox(height: Get.height * 0.05),
-                RoundedButton(
-                  text: "LOGIN",
-                  press: () {
-                    Get.offAndToNamed(Routes.HOME);
-                  },
-                  color: Get.theme.accentColor,
-                ),
-                RoundedButton(
-                  text: "REGISTRAR",
-                  color: Get.theme.primaryColorLight,
-                  textColor: Colors.black,
-                  press: () {
-                    Get.offAndToNamed('/signup');
-                  },
-                ),
+                Card(
+                    elevation: 5,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 24, vertical: 12),
+                      child: Column(
+                        children: [
+                          CustomInputField(hintText: 'Email'),
+                          SizedBox(height: Get.height * 0.02),
+                          CustomInputField(hintText: 'Password'),
+                          SizedBox(height: Get.height * 0.05),
+                          RoundedButton(
+                            text: "LOGIN",
+                            press: () {
+                              Get.offAndToNamed(Routes.HOME);
+                            },
+                            color: Get.theme.accentColor,
+                          ),
+                          RoundedButton(
+                            text: "REGISTRAR",
+                            color: Get.theme.primaryColorLight,
+                            textColor: Colors.black,
+                            press: () {
+                              Get.offAndToNamed('/signup');
+                            },
+                          ),
+                        ],
+                      ),
+                    )),
               ],
             ),
           ),

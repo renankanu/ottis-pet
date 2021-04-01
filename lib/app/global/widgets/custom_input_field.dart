@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'text_field_container.dart';
-
 class CustomInputField extends StatelessWidget {
   final String hintText;
   final IconData icon;
@@ -19,25 +17,35 @@ class CustomInputField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFieldContainer(
-      child: TextFormField(
-        validator: (value) {
-          if (value.isEmpty) {
-            return 'Campo requerido.';
-          }
-          return null;
-        },
-        controller: controller,
-        onChanged: onChanged,
-        cursorColor: Get.theme.primaryColor,
-        decoration: InputDecoration(
-          icon: Icon(
+    return TextFormField(
+      validator: (value) {
+        if (value.isEmpty) {
+          return 'Campo requerido.';
+        }
+        return null;
+      },
+      controller: controller,
+      onChanged: onChanged,
+      cursorColor: Get.theme.primaryColor,
+      decoration: InputDecoration(
+        isDense: true,
+        prefixIconConstraints: BoxConstraints(maxHeight: 20),
+        enabledBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(14)),
+          borderSide: const BorderSide(color: Colors.grey, width: 1),
+        ),
+        focusedBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(14)),
+          borderSide: const BorderSide(color: Colors.grey, width: 1),
+        ),
+        prefixIcon: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Icon(
             icon,
             color: Get.theme.primaryColor,
           ),
-          hintText: hintText,
-          border: InputBorder.none,
         ),
+        hintText: hintText,
       ),
     );
   }
