@@ -21,6 +21,7 @@ void main() async {
     supportedLocales: [
       const Locale('pt', 'BR'),
       const Locale('en', 'US'),
+      const Locale('en'),
     ],
   ));
 }

@@ -4,8 +4,9 @@
 // ignore: avoid_classes_with_only_static_members
 class AppTranslation {
   static Map<String, Map<String, String>> translations = {
-    'pt_BR': Locales.pt_BR,
+    'en': Locales.en,
     'en_US': Locales.en_US,
+    'pt_BR': Locales.pt_BR,
   };
 }
 
@@ -30,26 +31,25 @@ class LocaleKeys {
 }
 
 class Locales {
-  static const pt_BR = {
-    'buttons_login': 'Entrar',
-    'buttons_sign_in': 'Cadastrar-se',
-    'buttons_logout': 'Sair',
-    'buttons_sign_in_fb': 'Entrar com o Facebook',
-    'buttons_sign_in_google': 'Entrar com o Google',
-    'buttons_sign_in_apple': 'Entrar com a  Apple',
-    'welcome_find_your': 'Encontre o Seu Animal de Estimação dos',
-    'welcome_dream': 'Sonhos',
-    'welcome_here': 'Aqui',
-    'welcome_just_us':
-        'Junte-se a nós e descubra o melhor animal de estimação em sua localização',
-    'welcome_skip': 'Pular',
-    'welcome_done': 'Feito',
-    'welcome_because_their': 'Porque Suas Vidas São ',
-    'welcome_matter': 'Importantes',
+  static const en = {
+    'buttons_login': 'Login',
+    'buttons_sign_in': 'Sign-in',
+    'buttons_logout': 'Logout',
+    'buttons_sign_in_fb': 'Sign-in with Facebook',
+    'buttons_sign_in_google': 'Sign-in with Google',
+    'buttons_sign_in_apple': 'Sign-in with Apple',
+    'welcome_find_your': 'Find Your',
+    'welcome_dream': 'Dream',
+    'welcome_here': 'Pet Here',
+    'welcome_just_us': 'Join us and discover the best pet in your location',
+    'welcome_skip': 'Skip',
+    'welcome_done': 'Done',
+    'welcome_because_their': 'Because Their Lives ',
+    'welcome_matter': 'Matter',
     'welcome_a_percentage':
-        'Uma porcentagem dos cães de abrigo são considerados sem ajuda, e estamos aqui para atendê-los.',
-    'welcome_avoid': 'Evite maltratar animais, ',
-    'welcome_report': 'Denuncie!',
+        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
+    'welcome_avoid': 'Avoid Mistreating Animals, ',
+    'welcome_report': 'Report It',
   };
   static const en_US = {
     'buttons_login': 'Login',
@@ -70,5 +70,26 @@ class Locales {
         'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
     'welcome_avoid': 'Avoid Mistreating Animals, ',
     'welcome_report': 'Report It',
+  };
+  static const pt_BR = {
+    'buttons_login': 'Entrar',
+    'buttons_sign_in': 'Cadastrar-se',
+    'buttons_logout': 'Sair',
+    'buttons_sign_in_fb': 'Entrar com o Facebook',
+    'buttons_sign_in_google': 'Entrar com o Google',
+    'buttons_sign_in_apple': 'Entrar com a  Apple',
+    'welcome_find_your': 'Encontre o Seu Animal de Estimação dos',
+    'welcome_dream': 'Sonhos',
+    'welcome_here': 'Aqui',
+    'welcome_just_us':
+        'Junte-se a nós e descubra o melhor animal de estimação em sua localização',
+    'welcome_skip': 'Pular',
+    'welcome_done': 'Feito',
+    'welcome_because_their': 'Porque Suas Vidas São ',
+    'welcome_matter': 'Importantes',
+    'welcome_a_percentage':
+        'Uma porcentagem dos cães de abrigo são considerados sem ajuda, e estamos aqui para atendê-los.',
+    'welcome_avoid': 'Evite maltratar animais, ',
+    'welcome_report': 'Denuncie!',
   };
 }
