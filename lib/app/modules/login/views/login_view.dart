@@ -4,7 +4,9 @@ import 'package:ottis_pet/app/global/colors.dart';
 import 'package:ottis_pet/app/global/text_style.dart';
 import 'package:ottis_pet/app/global/widgets/custom_input_field.dart';
 import 'package:ottis_pet/app/global/widgets/custom_button.dart';
-import 'package:ottis_pet/app/routes/app_routes.dart';
+import 'package:ottis_pet/app/modules/login/views/widgets/container_social_media.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ottis_pet/app/modules/login/views/widgets/or_divider.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -12,7 +14,7 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kCreamCan,
+      backgroundColor: kFrenchPass,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Center(
@@ -53,6 +55,26 @@ class LoginView extends GetView<LoginController> {
                     label: 'Login',
                     onTap: () {},
                   ),
+                  SizedBox(height: Get.height * 0.02),
+                  OrDivider(),
+                  SizedBox(height: Get.height * 0.02),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ContainerSocialMedia(
+                        background: kChambray,
+                        icon: FontAwesomeIcons.facebookF,
+                      ),
+                      ContainerSocialMedia(
+                        background: kPunch,
+                        icon: FontAwesomeIcons.google,
+                      ),
+                      ContainerSocialMedia(
+                        background: kBlack,
+                        icon: FontAwesomeIcons.apple,
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
