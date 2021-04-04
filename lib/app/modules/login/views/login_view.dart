@@ -14,7 +14,7 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kWhite,
+      backgroundColor: kDodgerBlue,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Center(
@@ -51,7 +51,9 @@ class LoginView extends GetView<LoginController> {
                   ),
                   SizedBox(height: Get.height * 0.02),
                   CustomButton(
-                    label: 'Login',
+                    buttonColor: kBlackRock,
+                    textColor: kWhite,
+                    label: 'Login'.toUpperCase(),
                     onTap: () {},
                   ),
                   SizedBox(height: Get.height * 0.02),

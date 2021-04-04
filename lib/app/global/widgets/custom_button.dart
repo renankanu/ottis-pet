@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ottis_pet/app/global/colors.dart';
+import 'package:ottis_pet/app/global/text_style.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
@@ -39,6 +40,8 @@ class CustomButton extends StatelessWidget {
                 )
               : Text(
                   label,
+                  style: kBaseStyle.copyWith(
+                      color: textColor, fontWeight: FontWeight.w500),
                 ),
         ),
       ),
