@@ -14,7 +14,7 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kFrenchPass,
+      backgroundColor: kWhite,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Center(
@@ -26,16 +26,15 @@ class LoginView extends GetView<LoginController> {
                   Text(
                     "Ottis Pet",
                     style: kBaseStyle.copyWith(
-                        color: Colors.black,
+                        color: kBlackRock,
                         fontSize: 32,
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: Get.height * 0.05),
+                  SizedBox(height: Get.height * 0.04),
                   Card(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    elevation: 2,
                     shadowColor: kBlackRock,
                     child: Padding(
                       padding: const EdgeInsets.all(24),
