@@ -14,22 +14,21 @@ class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kDodgerBlue,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Center(
-          child: SingleChildScrollView(
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    "Ottis Pet",
-                    style: kBaseStyle.copyWith(
-                        color: kBlackRock,
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold),
-                  ),
+      backgroundColor: kWhite,
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "Ottis Pet",
+                style: kBaseStyle.copyWith(
+                    color: kBlackRock,
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold),
+              ),
+              Column(
+                children: [
                   SizedBox(height: Get.height * 0.04),
                   Card(
                     shape: RoundedRectangleBorder(
@@ -77,8 +76,8 @@ class LoginView extends GetView<LoginController> {
                     ],
                   )
                 ],
-              ),
-            ),
+              )
+            ],
           ),
         ),
       ),
