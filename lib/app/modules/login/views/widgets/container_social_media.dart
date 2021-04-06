@@ -18,8 +18,8 @@ class ContainerSocialMedia extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
-        height: 40,
-        width: 40,
+        height: 50,
+        width: 50,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(
             Radius.circular(30),
@@ -30,7 +30,7 @@ class ContainerSocialMedia extends StatelessWidget {
           child: FaIcon(
             icon,
             color: iconColor,
-            size: 16,
+            size: 24,
           ),
         ),
       ),

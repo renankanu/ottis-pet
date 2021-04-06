@@ -41,7 +41,7 @@ class CustomButton extends StatelessWidget {
               : Text(
                   label,
                   style: kBaseStyle.copyWith(
-                      color: textColor, fontWeight: FontWeight.w500),
+                      color: textColor, fontWeight: FontWeight.w700),
                 ),
         ),
       ),
