@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ottis_pet/app/global/colors.dart';
 import 'package:get/get.dart';
+import 'package:ottis_pet/generated/locales.g.dart';
 
 class OrDivider extends StatelessWidget {
   @override
@@ -15,7 +16,7 @@ class OrDivider extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Text(
-              "OR",
+              LocaleKeys.login_or.tr,
               style: TextStyle(
                 color: kBlackRock,
                 fontWeight: FontWeight.w600,

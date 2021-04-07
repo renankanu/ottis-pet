@@ -7,6 +7,7 @@ import 'package:ottis_pet/app/global/widgets/custom_button.dart';
 import 'package:ottis_pet/app/modules/login/views/widgets/container_social_media.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ottis_pet/app/modules/login/views/widgets/or_divider.dart';
+import 'package:ottis_pet/generated/locales.g.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -33,7 +34,7 @@ class LoginView extends GetView<LoginController> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    "Ottis Pet",
+                    LocaleKeys.global_app_name.tr,
                     style: kBaseStyle.copyWith(
                         color: kWhite,
                         fontSize: 32,
@@ -55,11 +56,13 @@ class LoginView extends GetView<LoginController> {
                                 vertical: 24, horizontal: 12),
                             child: Column(
                               children: [
-                                CustomInputField(hintText: 'Email'),
+                                CustomInputField(
+                                    hintText: LocaleKeys.login_email.tr),
                                 SizedBox(height: Get.height * 0.02),
-                                CustomInputField(hintText: 'Password'),
+                                CustomInputField(
+                                    hintText: LocaleKeys.login_password.tr),
                                 SizedBox(height: Get.height * 0.05),
-                                Text('Não tem conta? Crie uma agora!')
+                                Text(LocaleKeys.login_no_have_account.tr)
                               ],
                             ),
                           ),
@@ -68,7 +71,7 @@ class LoginView extends GetView<LoginController> {
                         CustomButton(
                           buttonColor: kDodgerBlue,
                           textColor: kWhite,
-                          label: 'Login'.toUpperCase(),
+                          label: LocaleKeys.login_login.tr.toUpperCase(),
                           onTap: () {},
                         ),
                         SizedBox(height: Get.height * 0.02),
