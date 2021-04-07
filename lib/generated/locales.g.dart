@@ -4,13 +4,14 @@
 // ignore: avoid_classes_with_only_static_members
 class AppTranslation {
   static Map<String, Map<String, String>> translations = {
+    'pt_BR': Locales.pt_BR,
     'en': Locales.en,
     'en_US': Locales.en_US,
-    'pt_BR': Locales.pt_BR,
   };
 }
 
 class LocaleKeys {
+  static const global_app_name = 'global_app_name';
   static const buttons_login = 'buttons_login';
   static const buttons_sign_in = 'buttons_sign_in';
   static const buttons_logout = 'buttons_logout';
@@ -28,50 +29,16 @@ class LocaleKeys {
   static const welcome_a_percentage = 'welcome_a_percentage';
   static const welcome_avoid = 'welcome_avoid';
   static const welcome_report = 'welcome_report';
+  static const login_email = 'login_email';
+  static const login_password = 'login_password';
+  static const login_no_have_account = 'login_no_have_account';
+  static const login_login = 'login_login';
+  static const login_or = 'login_or';
 }
 
 class Locales {
-  static const en = {
-    'buttons_login': 'Login',
-    'buttons_sign_in': 'Sign-in',
-    'buttons_logout': 'Logout',
-    'buttons_sign_in_fb': 'Sign-in with Facebook',
-    'buttons_sign_in_google': 'Sign-in with Google',
-    'buttons_sign_in_apple': 'Sign-in with Apple',
-    'welcome_find_your': 'Find Your',
-    'welcome_dream': 'Dream',
-    'welcome_here': 'Pet Here',
-    'welcome_just_us': 'Join us and discover the best pet in your location',
-    'welcome_skip': 'Skip',
-    'welcome_done': 'Done',
-    'welcome_because_their': 'Because Their Lives ',
-    'welcome_matter': 'Matter',
-    'welcome_a_percentage':
-        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
-    'welcome_avoid': 'Avoid Mistreating Animals, ',
-    'welcome_report': 'Report It',
-  };
-  static const en_US = {
-    'buttons_login': 'Login',
-    'buttons_sign_in': 'Sign-in',
-    'buttons_logout': 'Logout',
-    'buttons_sign_in_fb': 'Sign-in with Facebook',
-    'buttons_sign_in_google': 'Sign-in with Google',
-    'buttons_sign_in_apple': 'Sign-in with Apple',
-    'welcome_find_your': 'Find Your',
-    'welcome_dream': 'Dream',
-    'welcome_here': 'Pet Here',
-    'welcome_just_us': 'Join us and discover the best pet in your location',
-    'welcome_skip': 'Skip',
-    'welcome_done': 'Done',
-    'welcome_because_their': 'Because Their Lives ',
-    'welcome_matter': 'Matter',
-    'welcome_a_percentage':
-        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
-    'welcome_avoid': 'Avoid Mistreating Animals, ',
-    'welcome_report': 'Report It',
-  };
   static const pt_BR = {
+    'global_app_name': 'Ottis Pet',
     'buttons_login': 'Entrar',
     'buttons_sign_in': 'Cadastrar-se',
     'buttons_logout': 'Sair',
@@ -91,5 +58,62 @@ class Locales {
         'Uma porcentagem dos cães de abrigo são considerados sem ajuda, e estamos aqui para atendê-los.',
     'welcome_avoid': 'Evite maltratar animais, ',
     'welcome_report': 'Denuncie!',
+    'login_email': 'Email',
+    'login_password': 'Senha',
+    'login_no_have_account': 'Não tem conta? Crie agora',
+    'login_login': 'Entrar',
+    'login_or': 'OU',
+  };
+  static const en = {
+    'global_app_name': 'Ottis Pet',
+    'buttons_login': 'Login',
+    'buttons_sign_in': 'Sign-in',
+    'buttons_logout': 'Logout',
+    'buttons_sign_in_fb': 'Sign-in with Facebook',
+    'buttons_sign_in_google': 'Sign-in with Google',
+    'buttons_sign_in_apple': 'Sign-in with Apple',
+    'welcome_find_your': 'Find Your',
+    'welcome_dream': 'Dream',
+    'welcome_here': 'Pet Here',
+    'welcome_just_us': 'Join us and discover the best pet in your location',
+    'welcome_skip': 'Skip',
+    'welcome_done': 'Done',
+    'welcome_because_their': 'Because Their Lives ',
+    'welcome_matter': 'Matter',
+    'welcome_a_percentage':
+        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
+    'welcome_avoid': 'Avoid Mistreating Animals, ',
+    'welcome_report': 'Report It',
+    'login_email': 'Email',
+    'login_password': 'Password',
+    'login_no_have_account': 'No have account? Create now',
+    'login_login': 'Login',
+    'login_or': 'OR',
+  };
+  static const en_US = {
+    'global_app_name': 'Ottis Pet',
+    'buttons_login': 'Login',
+    'buttons_sign_in': 'Sign-in',
+    'buttons_logout': 'Logout',
+    'buttons_sign_in_fb': 'Sign-in with Facebook',
+    'buttons_sign_in_google': 'Sign-in with Google',
+    'buttons_sign_in_apple': 'Sign-in with Apple',
+    'welcome_find_your': 'Find Your',
+    'welcome_dream': 'Dream',
+    'welcome_here': 'Pet Here',
+    'welcome_just_us': 'Join us and discover the best pet in your location',
+    'welcome_skip': 'Skip',
+    'welcome_done': 'Done',
+    'welcome_because_their': 'Because Their Lives ',
+    'welcome_matter': 'Matter',
+    'welcome_a_percentage':
+        'A percentage of shelter dogs are deemed beyond help, and we’re here to serve them.',
+    'welcome_avoid': 'Avoid Mistreating Animals, ',
+    'welcome_report': 'Report It',
+    'login_email': 'Email',
+    'login_password': 'Password',
+    'login_no_have_account': 'No have account? Create now',
+    'login_login': 'Login',
+    'login_or': 'OR',
   };
 }
