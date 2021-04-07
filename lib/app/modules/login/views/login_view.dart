@@ -54,16 +54,19 @@ class LoginView extends GetView<LoginController> {
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
                                 vertical: 24, horizontal: 12),
-                            child: Column(
-                              children: [
-                                CustomInputField(
-                                    hintText: LocaleKeys.login_email.tr),
-                                SizedBox(height: Get.height * 0.02),
-                                CustomInputField(
-                                    hintText: LocaleKeys.login_password.tr),
-                                SizedBox(height: Get.height * 0.05),
-                                Text(LocaleKeys.login_no_have_account.tr)
-                              ],
+                            child: Form(
+                              key: controller.formKey,
+                              child: Column(
+                                children: [
+                                  CustomInputField(
+                                      hintText: LocaleKeys.login_email.tr),
+                                  SizedBox(height: Get.height * 0.02),
+                                  CustomInputField(
+                                      hintText: LocaleKeys.login_password.tr),
+                                  SizedBox(height: Get.height * 0.05),
+                                  Text(LocaleKeys.login_no_have_account.tr)
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -72,7 +75,9 @@ class LoginView extends GetView<LoginController> {
                           buttonColor: kDodgerBlue,
                           textColor: kWhite,
                           label: LocaleKeys.login_login.tr.toUpperCase(),
-                          onTap: () {},
+                          onTap: () {
+                            controller.login();
+                          },
                         ),
                         SizedBox(height: Get.height * 0.02),
                         OrDivider(),
