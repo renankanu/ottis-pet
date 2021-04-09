@@ -13,3 +13,4 @@ const Color kSaffron = Color(0xFFF7C536);
 const Color kDodgerBlue = Color(0xFF3AAAFF);
 const Color kChambray = Color(0xFF3b5998);
 const Color kPunch = Color(0xFFDB4437);
+const Color kPersimmon = Color(0xFFFF6347);

@@ -55,14 +55,29 @@ class LoginView extends GetView<LoginController> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 24, horizontal: 12),
                             child: Form(
+                              autovalidateMode: controller.hasError.value
+                                  ? AutovalidateMode.onUserInteraction
+                                  : AutovalidateMode.disabled,
                               key: controller.formKey,
                               child: Column(
                                 children: [
                                   CustomInputField(
-                                      hintText: LocaleKeys.login_email.tr),
+                                    keyboardType: TextInputType.emailAddress,
+                                    controller: controller.usernameCtrl,
+                                    hintText: LocaleKeys.login_email.tr,
+                                    onChanged: (value) {},
+                                  ),
                                   SizedBox(height: Get.height * 0.02),
                                   CustomInputField(
-                                      hintText: LocaleKeys.login_password.tr),
+                                    keyboardType: TextInputType.visiblePassword,
+                                    hintText: LocaleKeys.login_password.tr,
+                                    obscureText: !controller.showPassword.value,
+                                    isPassword: true,
+                                    onPressShowHidePassword: () {
+                                      controller.showPassword.value =
+                                          !controller.showPassword.value;
+                                    },
+                                  ),
                                   SizedBox(height: Get.height * 0.05),
                                   Text(LocaleKeys.login_no_have_account.tr)
                                 ],
