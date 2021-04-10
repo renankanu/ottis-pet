@@ -68,16 +68,18 @@ class LoginView extends GetView<LoginController> {
                                     onChanged: (value) {},
                                   ),
                                   SizedBox(height: Get.height * 0.02),
-                                  CustomInputField(
-                                    keyboardType: TextInputType.visiblePassword,
-                                    hintText: LocaleKeys.login_password.tr,
-                                    obscureText: !controller.showPassword.value,
-                                    isPassword: true,
-                                    onPressShowHidePassword: () {
-                                      controller.showPassword.value =
-                                          !controller.showPassword.value;
-                                    },
-                                  ),
+                                  Obx(() => CustomInputField(
+                                        keyboardType:
+                                            TextInputType.visiblePassword,
+                                        hintText: LocaleKeys.login_password.tr,
+                                        obscureText:
+                                            !controller.showPassword.value,
+                                        isPassword: true,
+                                        onPressShowHidePassword: () {
+                                          controller.showPassword.value =
+                                              !controller.showPassword.value;
+                                        },
+                                      )),
                                   SizedBox(height: Get.height * 0.05),
                                   Text(LocaleKeys.login_no_have_account.tr)
                                 ],
