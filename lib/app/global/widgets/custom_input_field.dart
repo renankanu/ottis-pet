@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ottis_pet/app/global/colors.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:string_validator/string_validator.dart';
 
 class CustomInputField extends StatefulWidget {
   final String hintText;
@@ -16,7 +17,7 @@ class CustomInputField extends StatefulWidget {
   const CustomInputField({
     Key key,
     this.hintText,
-    this.icon = Icons.person,
+    this.icon = FontAwesomeIcons.userAlt,
     this.onChanged,
     this.controller,
     this.keyboardType = TextInputType.text,
@@ -35,7 +36,11 @@ class _CustomInputFieldState extends State<CustomInputField> {
     return TextFormField(
       validator: (value) {
         if (value.isEmpty) {
-          return 'Campo requerido.';
+          return '${widget.hintText} obrigatório.';
+        }
+        if (widget.keyboardType == TextInputType.emailAddress &&
+            !isEmail(value)) {
+          return 'Email inválido.';
         }
         return null;
       },
@@ -68,7 +73,8 @@ class _CustomInputFieldState extends State<CustomInputField> {
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Icon(
             widget.icon,
-            color: Get.theme.primaryColor,
+            color: Colors.grey,
+            size: 14,
           ),
         ),
         hintText: widget.hintText,

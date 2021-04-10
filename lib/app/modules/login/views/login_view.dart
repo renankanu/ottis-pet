@@ -8,6 +8,7 @@ import 'package:ottis_pet/app/modules/login/views/widgets/container_social_media
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ottis_pet/app/modules/login/views/widgets/or_divider.dart';
 import 'package:ottis_pet/generated/locales.g.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -69,6 +70,7 @@ class LoginView extends GetView<LoginController> {
                                   ),
                                   SizedBox(height: Get.height * 0.02),
                                   Obx(() => CustomInputField(
+                                        icon: FontAwesomeIcons.lock,
                                         keyboardType:
                                             TextInputType.visiblePassword,
                                         hintText: LocaleKeys.login_password.tr,
