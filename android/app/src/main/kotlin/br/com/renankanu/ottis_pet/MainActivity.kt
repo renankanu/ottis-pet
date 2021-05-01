@@ -1,4 +1,4 @@
-package br.com.renankanu.ottis_pet
+package br.com.renankanu.ottisPet
 
 import io.flutter.embedding.android.FlutterActivity
 
