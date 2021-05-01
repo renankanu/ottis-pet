@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225798047565",
+    "project_id": "ottis-pet",
+    "storage_bucket": "ottis-pet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225798047565:android:6b8368921fb83a8a5b9904",
+        "android_client_info": {
+          "package_name": "br.com.renankanu.ottisPet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225798047565-e4d7as3v6con23dkd9j1lglp8bce7vr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuOojo9EMqcxr6Z3VGXkKn8B27SDRq7Yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225798047565-e4d7as3v6con23dkd9j1lglp8bce7vr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
